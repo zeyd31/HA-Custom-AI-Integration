@@ -1,0 +1,14 @@
+{
+  "domain": "custom_conversation_agent",
+  "name": "Custom Conversation Agent",
+  "version": "1.0.1",
+  "documentation": "https://github.com/zeyd31/HA-Custom-AI-Integration",
+  "issue_tracker": "https://github.com/zeyd31/HA-Custom-AI-Integration/issues",
+  "dependencies": [],
+  "codeowners": ["@zeyd31"],
+  "requirements": ["requests>=2.28.0"],
+  "iot_class": "cloud_polling",
+  "config_flow": true,
+  "integration_type": "service",        
+  "after_dependencies": ["assist_pipeline", "intent"]
+}

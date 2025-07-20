@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure AI Conversation Agent",
+        "description": "Set up your AI assistant for Home Assistant",
+        "data": {
+          "name": "Assistant Name",
+          "api_key": "API Key",
+          "base_url": "API Base URL",
+          "model": "Model Name",
+          "max_tokens": "Max Tokens",
+          "temperature": "Temperature (0-2)"
+        },
+        "data_description": {
+          "name": "The name for your LLM assistant",
+          "api_key": "Your API key or authentication token",
+          "base_url": "The base URL for the LLM API endpoint",
+          "model": "The LLM model to use (e.g., mistral:7b)",
+          "max_tokens": "Maximum number of tokens in the response",
+          "temperature": "Controls randomness (0=deterministic, 2=very random)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to LLM API. Please check your API key and URL.",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "An LLM assistant with this name is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "AI Assistant Options",
+        "data": {
+          "max_tokens": "Max Tokens",
+          "temperature": "Temperature"
+        }
+      }
+    }
+  }
+}

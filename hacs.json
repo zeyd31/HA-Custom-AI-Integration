@@ -1,0 +1,8 @@
+{
+  "name": "Custom LLM End Point Integration",
+  "content_in_root": false,
+  "domains": ["sensor"],  // or switch, binary_sensor, etc.
+  "country": "DZ",
+  "homeassistant": "2023.7.0",
+  "iot_class": "local_polling"
+}
